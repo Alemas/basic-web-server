@@ -1,0 +1,20 @@
+Covers the basic use of dynamic templates (hbs)
+  - loading hbs file with .render
+  - hbs files syntax
+  - Use of partials (reutilization of the same template on different templates)
+  - Use of helpers (pre-made functions that can be called on templates)
+    - The syntax for calling functions in templates is the same as when calling properties ({{function_name/property_name}})
+    - hbs checks always first for a function and only then for a property
+    - When calling a helper with arguments, the syntax is the following: {{helperMethod arg1 arg2 ...}}
+  - Use of middleware functions (app.use)
+    - Can be specified with a path (use('/path', callback))
+    - The argument 'next' on callback function is a method that, when called, continues the request to next lines
+  - Generating SSH keys and adding to github
+    - https://help.github.com/articles/connecting-to-github-with-ssh/
+    - Adding ssh key to heroku:
+      - Heroku keys:add
+      - Heroky keys (prints current keys)
+      - ssh -v git@heroku.com
+  - heroku will always check package.json for a script named 'start' when deploying the app
+    - This script must contain the terminal command that start the app
+    - Run the app using 'npm start'
