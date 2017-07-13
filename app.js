@@ -70,6 +70,12 @@ app.get('/', (request, response) => {
   });
 })
 
+app.get('/projects', (request, response) => {
+  response.render('projects.hbs', {
+    pageTitle : 'Portfolio'
+  });
+});
+
 app.listen(port, function() {
   console.log(`Listening on port ${port}`);
 });
