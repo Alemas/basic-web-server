@@ -13,7 +13,7 @@ Covers the basic use of dynamic templates (hbs)
     - https://help.github.com/articles/connecting-to-github-with-ssh/
     - Adding ssh key to heroku:
       - Heroku keys:add
-      - Heroky keys (prints current keys)
+      - Heroku keys (prints current keys)
       - ssh -v git@heroku.com
   - heroku will always check package.json for a script named 'start' when deploying the app
     - This script must contain the terminal command that start the app
